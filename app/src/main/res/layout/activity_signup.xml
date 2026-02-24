@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primaryColor">
+
+
+
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/CloseApp"
+        android:background="@drawable/cross"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="Close App" />
+
+    <!-- res/layout/activity_signup.xml -->
+    <LinearLayout
+        android:layout_width="398dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shadow_background"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <!-- App Logo or Icon -->
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="App Logo"
+                android:src="@drawable/logo1" />
+
+            <EditText
+                android:id="@+id/first_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_edittext_background"
+                android:ems="10"
+                android:hint="Enter First Name"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/last_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_edittext_background"
+                android:ems="10"
+                android:hint="Enter Last Name"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <!-- Email EditText -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_edittext_background"
+                android:ems="10"
+                android:hint="Email or Phone"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <!-- Password EditText -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_edittext_background"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/primaryColor"
+                android:padding="14dp"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- Text for existing user -->
+            <TextView
+                android:id="@+id/tvAlreadyHaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:onClick="navigateToLogin"
+                android:text="Already have an account? Login"
+                android:textColor="@color/primaryColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

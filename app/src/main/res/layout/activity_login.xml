@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primaryColor">
+
+    <!-- Login form card container -->
+
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="2dp"
+        android:id="@+id/CloseApp"
+        android:background="@drawable/cross"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="Close App" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:padding="24dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/shadow_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Login Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/welcometomightymeals"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/angkor"
+            android:freezesText="true"
+            android:gravity="center"
+            android:text="Welcome to Mighty Meals"
+            android:textColor="@color/primaryColor"
+            android:textSize="26sp" />
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email or Phone"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/primaryColor"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/custom_edittext_background"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/primaryColor"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_edittext_background"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primaryColor"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Forgot Password Text -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primaryColor"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
